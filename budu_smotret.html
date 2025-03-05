@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Мои закладки </title>
+
+<link rel="stylesheet" type="text/css" href="budu_smotret.css">
+<link rel="stylesheet" type="text/css" href="ГлавноеМеню_2.css">
+<!-- <link rel="stylesheet" type="text/css" href="Serials.css"> -->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+</head>
+<body class="body">
+
+<!-- ЭТОТ ID ПРИ ПРОКРУТКЕ -->
+<header id="header"                 class="header"> <!-- Заголовок -->
+ 
+  <div class='container'> 
+    <div class="header__body">                  
+             
+<a href="#" class="header__logo">
+        <img src="-" alt="">
+        <h2>KinoJonas.com</h2>
+</a>
+
+            <nav class="header__menu">               
+                <div class="btn-group">
+                    
+                    <div class="header_list">
+                        <a href="index.html" class="header__link">
+                            <button class="button"><p><i class="fa-solid fa-house"></i>  Главная </p></button>
+                        </a>
+                        <a href="избранное.html"  class="header__link">
+                            <button class="button"> <p> <i class="fa-solid fa-bookmark"></i>  Моё кино </p></button> 
+                        </a>
+                    </div>
+                                                                        <!-- ЗАКЛАДКИ ПРОЗРАЧНЫЕ <i class="fa-regular fa-bookmark"></i> -->
+                    <div class="sanda">
+                        <div class="search"> <p> Поиск </p></div>
+                        <div class="ava"> <p>Nickname</p> </div>
+                    </div>
+
+                </div>
+            </nav>
+    </div>
+</div>
+</header>
+
+
+
+<br>
+ 
+<div class="fon_img"> 
+  
+    <div class="fon_temnee"> </div>
+    <!-- <img src="img/fiol.png">  -->
+    <img src="img/fon_temnyj_piatna_51861_1920x1080.jpg"> 
+ 
+ 
+</div>
+
+<a href="#" onclick="history.back();">
+  <div class="back"> <i class="fa-solid fa-arrow-left-long"> </i> <p>Назад</p>  </div>
+</a>
+
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+ 
+ 
+<!-- <div class="chapter">
+  <a href="избранное.html"><p>Мое кино></p></a>  <p2>Буду смотреть></p2> 
+  </div> -->
+ 
+ 
+  
+<div class="wrapper"> 
+  <div class="block_row"> 
+<!-- <div class="wrapper">  -->
+         
+  <div class="block_content" style=""> <a class="game_news2"> <h2> Буду смотреть:  </h2> 
+    <div class="quantity" id="movieCount"> 0</div> 
+  </a>
+    
+  </div> 
+  <div class="block_content_space-between"> 
+
+    <div> 
+    <div class="block_filter">
+
+      <p> Фильтры: </p> 
+        <div class="filter-section"> 
+        <select id="genreFilter" onchange="filterMovies()">
+          <option value="all">Все жанры</option>
+          <option value="fantasy">Фантастика</option>
+          <option value="comedy">Комедия</option>
+          <option value="action">Боевик</option>
+          <option value="drama">Драма</option>
+          <option value="detective">Детектив</option>
+          <option value="thriller">Триллер</option>
+          <option value="horrors">Ужасы</option>
+          <option value="erotica">Эротика</option>
+          <option value="biography">Биография</option>
+          <option value="crime">Криминал</option>
+          
+        </select> 
+         
+      </div>
+      <div class="filter-section"> 
+        <select id="formatFilter" onchange="filterMovies()">
+          <option value="all">Все форматы</option>
+          <option value="film">Фильмы</option>
+          <option value="series">Сериалы</option>
+          <option value="cartoon">Мультфильмы</option>
+          
+        </select> 
+         
+      </div>
+      <!-- <div class="filter"> Год </div>
+      <div class="filter"> Рейтинг </div>   -->
+    </div>
+  </div>
+  <div>
+    <div class="search-section">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Поиск по вашему списку"
+        onkeyup="searchMovies()"
+      />
+    </div>
+  </div>
+
+  </div>
+
+
+
+    <div class="block_content" id="moviesList" style=" background-image: radial-gradient(circle farthest-corner at center, #2b353d00 0%, #2b353d00 110%);">
+       
+
+      <div class="movie" data-genres="action" data-format="film"> 
+        <div class="Serial">
+            <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/6412bfe1-8ee6-4e33-8b92-4122764b106c/300x450" loading="lazy">
+            
+              <a href="hraniteli.html" class="nevidim">
+                <div class="nevidim2">
+                  <a href="" class="delete"> 	
+                    &#10006; </a>
+                </div>
+              </a>
+          <div class="ocenka7" title="Оценка на КиноПоиске"><p>7.7</p></div>
+        </div>                
+      <div class="name2"> <h2> 8 подруг Оушена </h2></div>
+      <div class="name3"> <h2> Фантастика, 2021, Рейтинг: 8.2 </h2></div>
+    </div> 
+
+      <div class="movie" data-format="film" data-genres="action,fantasy"> 
+        <div class="Serial">
+            <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/e091e668-b8a3-416d-a6ea-25c1a17b781a/300x450" loading="lazy">
+            
+              <a href="hraniteli.html" class="nevidim">
+                <div class="nevidim2">
+                  <a href="" class="delete"> 	&#10006; </a>
+                </div>
+              </a>
+          <div class="ocenka7" title="Оценка на КиноПоиске"><p>7.7</p></div>
+        </div>                
+      <div class="name2"> <h2> Название </h2></div>
+      <div class="name3"> <h2> Год, Жанр </h2></div>
+    </div> 
+ 
+      <div class="movie" data-format="film" data-genres="fantasy"> 
+        <div class="Serial">
+            <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/6c56fc51-4e6e-4d84-b37b-4bddd5f71a26/300x450" loading="lazy">
+            
+              <a href="hraniteli.html" class="nevidim">
+                <div class="nevidim2">
+                  <a href="" class="delete"> 	&#10006; </a>
+                </div>
+              </a>
+          <div class="ocenka7" title="Оценка на КиноПоиске"><p>7.7</p></div>
+        </div>                
+      <div class="name2"> <h2> Человек-муравей и Оса </h2></div>
+      <div class="name3"> <h2> Фантастика </h2></div>
+    </div> 
+
+   
+
+      <div class="movie" data-format="film" data-genres="fantasy"> 
+        <div class="Serial">
+            <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/c02ef344-c355-4c77-a28d-e0d7d9a771df/300x450" loading="lazy">
+            
+              <a href="kino/perviy_mstitel_2.html" class="nevidim">
+                <div class="nevidim2">
+                  <a href="" class="delete">  &#10006; </a>
+                </div>
+              </a>
+          <div class="ocenka7" title="Оценка на КиноПоиске"><p>7.7</p></div>
+        </div>                
+      <div class="name2"> <h2> Первый мститель 2: Другая война </h2></div>
+      <div class="name3"> <h2> Фантастика </h2></div>
+    </div> 
+
+
+    <div class="movie" data-genres="fantasy" data-format="film" > 
+      <div class="Serial">
+          <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/ee5d54ff-e5b4-443d-a392-604c61c298c6/300x" loading="lazy">
+            <a href="kino/avatar2.html" class="nevidim">
+              <div class="nevidim2">
+                <a href="" class="delete"> 	&#10006; </a>
+              </div>
+            </a>
+        <div class="ocenka7" title="Оценка на КиноПоиске"><p>8.3</p></div>
+      </div>                
+    <div class="name2"> <h2> Аватар 2 </h2></div>
+    <div class="name3"> <h2> 2023, Фантастика </h2></div>
+</div> 
+
+  <div class="movie" data-genres="drama" data-format="series" > 
+      <div class="Serial">
+          <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/c657ae89-e600-42a9-983f-6f4ee685b5b3/300x450" loading="lazy">
+            <a href="kino/hod_korolevi.html" class="nevidim">
+              <div class="nevidim2">
+                <a href="" class="delete"> 	&#10006; </a>
+              </div>
+            </a>
+        <div class="ocenka7" title="Оценка на КиноПоиске"><p>8.3</p></div>
+      </div>                
+    <div class="name2"> <h2> Ход королевы </h2></div>
+    <div class="name3"> <h2> 2023, Драма </h2></div>
+</div> 
+
+<div class="movie" data-genres="fantasy" data-format="film" > 
+      <div class="Serial">
+          <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/70c20368-a412-43d2-8646-3d3529ce8a7a/300x450" loading="lazy">
+            <a href="kino/odni_iz_nas.html" class="nevidim">
+              <div class="nevidim2">
+                <a href="" class="delete"> 	&#10006; </a>
+              </div>
+            </a>
+        <div class="ocenka7" title="Оценка на КиноПоиске"><p>8.2</p></div>
+      </div>                
+    <div class="name2"> <h2> Черная пантера: Ваканда навеки </h2></div>
+    <div class="name3"> <h2> 2023, Фантастика </h2></div>
+</div> 
+
+  <div class="movie" data-genres="detective" data-format="series" > 
+    <div class="Serial">
+        <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/cc3d845f-01f3-4c06-b7e3-89d7a7ce4fb2/300x450" loading="lazy">
+        
+          <a href="kino/odni_iz_nas.html" class="nevidim">
+            <div class="nevidim2">
+              <a href="" class="delete"> 	&#10006; </a>
+            </div>
+          </a>
+      <div class="ocenka7" title="Оценка на КиноПоиске"><p>8.2</p></div>
+    </div>                
+  <div class="name2"> <h2> Покерфейс </h2></div>
+  <div class="name3"> <h2> 2023, Детектив </h2></div>
+</div> 
+
+  <div class="movie" data-genres="horrors" data-format="series" > 
+    <div class="Serial">
+        <img src="https://static.hdrezka.ac/i/2023/1/19/v13ba9e6861ecdu71e86t.jpg" loading="lazy">
+        
+          <a href="kino/odni_iz_nas.html" class="nevidim">
+            <div class="nevidim2">
+              <a href="" class="delete"> 	&#10006; </a>
+            </div>
+          </a>
+      <div class="ocenka7" title="Оценка на КиноПоиске"><p>8.2</p></div>
+    </div>                
+  <div class="name2"> <h2> Одни из нас </h2></div>
+  <div class="name3"> <h2> 2023, Ужасы </h2></div>
+</div> 
+
+<div class="movie" data-genres="detective" data-format="series" > 
+  <div class="Serial">
+      <img src="https://static.hdrezka.ac/i/2014/6/24/o246187ee094dvd15n41c.jpg" loading="lazy">
+      <a class="trailer"> Сериал </a>
+        <a href="kino/hranilishe_13.html" class="nevidim">
+          <div class="nevidim2">
+            <a href="" class="delete"> 	&#10006; </a>
+          </div>
+        </a>
+    <div class="ocenka7" title="Оценка на КиноПоиске"><p>7.4</p></div>
+  </div>                
+<div class="name2"> <h2> Хранилище 13 </h2></div>
+<div class="name3"> <h2> 2009, Детектив </h2></div>
+</div> 
+
+<div class="movie" data-genres="crime" data-format="series"> 
+  <div class="Serial">
+      <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/f3b08a0e-9f75-4e2f-8879-0a914cb54d05/300x450" loading="lazy">
+      <a class="trailer"> Сериал </a>
+        <a href="mister_robot.html" class="nevidim">
+          <div class="nevidim2">
+            <a href="" class="delete"> 	&#10006; </a>
+          </div>
+        </a>
+    <div class="ocenka7" title="Оценка на КиноПоиске"><p>7.8</p></div>
+  </div>                
+<div class="name2"> <h2> Мистер Робот </h2></div>
+<div class="name3"> <h2> 2015, Криминал </h2></div>
+</div> 
+
+<div class="movie" data-genres="crime" data-format="series"> 
+  <div class="Serial">
+      <img src="img/Король_Талсы.webp" loading="lazy">
+      <a class="trailer"> Сериал </a>
+  <a href="kino/Король_Талсы.html"   class="nevidim">
+     <div class="nevidim2">
+      <a href="" class="delete"> 	&#10006; </a>
+  </div>
+</a>
+<div class="ocenka7" title="Оценка на КиноПоиске"><p>7.9</p></div>
+</div>                
+<div class="name2"> <h2>Король Талсы </h2></div>
+<div class="name3"> <h2> 2022, Криминал </h2></div>
+</div> 
+
+<div class="movie" data-genres="fantasy" data-format="series"> 
+<div class="Serial">
+    <img src="img/Супермен_и_Лоис.webp" loading="lazy">
+    <a class="trailer"> Сериал </a>  
+<a href="kino/Супермен_и_Лоис.html"   class="nevidim">                  
+  <div class="nevidim2">
+    <a href="" class="delete"> &#10006; </a>
+  </div>
+</a>
+<div class="ocenka7" title="Оценка на КиноПоиске"><p>7.6</p></div>
+</div>                
+<div class="name2"> <h2> Супермен и Лоис </h2></div>
+<div class="name3"> <h2> 2021, Жанр </h2></div>
+</div> 
+
+<div class="movie" data-genres="drama" data-format="series"> 
+  <div class="Serial">
+      <img src="img/911.jpg" loading="lazy">
+      <a class="trailer"> Сериал </a>
+  <a href="kino/911.html"   class="nevidim">
+     <div class="nevidim2">
+      <a href="" class="delete"> 	&#10006; </a>
+  </div>
+</a>
+<div class="ocenka7" title="Оценка на КиноПоиске"><p>8.3</p></div>
+</div>                
+<div class="name2"> <h2> 911 </h2></div>
+<div class="name3"> <h2> 2022, Криминал </h2></div>
+</div> 
+
+<div class="movie" data-genres="fantasy" data-format="series"> 
+  <div class="Serial">
+      <img src="img/Агенты_ЩИТ_.webp" loading="lazy">
+
+      <a class="trailer"> Сериал </a>
+
+  <a href="kino/Агенты_ЩИТ.html"   class="nevidim">
+
+     <div class="nevidim2">
+      <a href="" class="delete"> 	&#10006; </a>
+  </div>
+</a>
+<div class="ocenka7" title="Оценка на КиноПоиске"><p>8.3</p></div>
+</div>                
+<div class="name2"> <h2> Агенты ЩИТ </h2></div>
+<div class="name3"> <h2> 2022, Криминал </h2></div>
+</div> 
+
+<div class="movie" data-genres="fantasy" data-format="series"> 
+    <div class="Serial">
+        <img src="img/Flash.jpg" loading="lazy">
+
+        <a class="trailer"> Сериал </a>
+
+    <a href="kino/флеш.html"   class="nevidim">
+
+       <div class="nevidim2">
+      <a href="" class="delete"> 	
+        &#128722 </a>
+    </div>
+  </a>
+ <div class="ocenka7" title="Оценка на КиноПоиске"><p>7.5</p></div>
+</div>                
+<div class="name2"> <h2> Флеш </h2></div>
+<div class="name3"> <h2> 2022, Фантастика </h2></div>
+</div> 
+
+<div class="movie" data-genres="comedy" data-format="series"> 
+  <div class="Serial">
+      <img src="img/Кремниевая_долина.jpg" loading="lazy">
+      <a class="trailer"> Сериал </a>
+  <a href="kino/кремниевая_долина.html"   class="nevidim">
+     <div class="nevidim2">
+    <a href="" class="delete"> 	
+      &#128722 </a>
+  </div>
+  </a>
+  <div class="ocenka7" title="Оценка на КиноПоиске"><p>7.5</p></div>
+  </div>                
+  <div class="name2"> <h2> Кремниевая/Силиконовая долина </h2></div>
+  <div class="name3"> <h2> 2022, Комедия </h2></div>
+</div> 
+
+<div class="movie" data-genres="biography" data-format="cartoon"> 
+  <div class="Serial">
+      <img src="img/Погружаясь_в_даркнет.webp" loading="lazy">
+
+  <a href="kino/Погружаясь_в_даркнет.html"   class="nevidim">       
+    <div class="nevidim2">
+      <a href="" class="delete"> &#10006; </a>
+    </div>
+  </a>
+
+<div class="ocenka7" title="Оценка на КиноПоиске"><p>7.6</p></div>
+</div>                
+<div class="name2"> <h2> Погружаясь в даркнет </h2></div>
+<div class="name3"> <h2> 2016, biography </h2></div>
+</div> 
+
+<!-- ПРОКРУТКА К ФИЛЬМУ ПРИ НАЖАТИИ НА СМОТРЕТЬ БЕСПЛАТНО -->
+<script src="js/прокрутка.js"></script>
+
+
+</div> 
+</div> 
+</div> 
+
+<br><br><br><br><br><br><br>
+ 
+
+
+<footer>
+  <div class="footer-logo"> 
+      <h1> KinoJonas.com </h1>
+  </div>  
+
+  <div class="footer-main"> 
+      <div class="footer-sections"> 
+          <a><h2>Жанры</h2></a>
+          <ul> 
+              <a href="../"><li>Фантастика</li></a>
+              <a><li>Боевики</li></a>
+              <a><li>Драма</li></a>
+              <a><li>Мелодрама</li></a>
+              <a><li>Детектив</li></a>
+              <a><li>Триллер</li></a>
+              <a><li>Ужасы</li></a>
+              <a><li>Эротика</li></a>
+          </ul> 
+      </div>
+      <div class="footer-sections">            
+          <ul>
+              <a> <li>Microsoft</li></a>
+              <a> <li>Google</li></a>
+              <li>Apple</li> 
+              <li>IBM</li>
+          </ul>            
+      </div>
+      <div class="footer-sections"> 
+          <a><h2> Атмосфера </h2></a>
+          <ul> 
+              <a href="../"><li>Солнечно, пляж</li></a>
+              <a><li>Мрачно, дождливо</li></a>
+              <a><li></li></a>
+              <a><li> Мотививаця</li></a>
+               
+          </ul> 
+      </div>
+  </div>
+
+</footer>
+
+<script src="js/videotube.js"></script>
+<script src="js/filter.js"></script>
+
+ 
+
+
+
+</body>
+</html>
